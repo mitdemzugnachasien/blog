@@ -15,7 +15,7 @@
   width: 60%;
   padding: 14px;
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 0px;
   font-size: 15px;
   margin-bottom: 16px;
   transition: 0.2s;
@@ -30,7 +30,7 @@
   width: 60%;
   padding: 14px;
   border: none;
-  border-radius: 10px;
+  border-radius: 0px;
   background: #111;
   color: white;
   font-size: 15px;
