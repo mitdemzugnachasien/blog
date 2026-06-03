@@ -23,31 +23,36 @@
 <body>
 
 <div id="login">
-    
 
-    <header class="masthead" style="background-image: url('assets/img/losttrain.JPG')">
-            <div class="container position-relative px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xl-7">
-                        <div class="site-heading">
-                            <h1 class="error" id="error">Hier fahren bald Züge</h1>
-                            <p> </p>
-    <input
-      type="password"
-      id="password"
-      placeholder="Passwort"
-    >
+    <header class="loginmasthead" style="background-image: url('assets/img/losttrain.JPG')">
+        <div class="overlay"></div>
 
-    <button onclick="checkPassword()">
-      Anmelden
-    </button>
-  </div>
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
 
+                    <div class="site-heading">
+                        <h1 class="error" id="error">Hier fahren bald Züge</h1>
+
+                        <p></p>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Passwort"
+                        >
+
+                        <button onclick="checkPassword()">
+                            Anmelden
+                        </button>
                     </div>
+
                 </div>
             </div>
-        </header>
-    </div>
+        </div>
+    </header>
+
+</div>
 
 <div id="content">
         <!-- Navigation-->
