@@ -10769,7 +10769,34 @@ header.loginmasthead:before {
   background-color: #212529;
   opacity: 0.5;
 }
+/* Hintergrundebenen für Fade-Effekt */
+.masthead-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1.2s ease-in-out;
+    z-index: 0;
+}
 
+
+/* Klickbereiche */
+header.slide-zone {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 3;
+    cursor: pointer;
+}
+
+header.slide-left {
+    left: 0;
+}
+
+header.slide-right {
+    right: 0;
+}
 header.masthead {
   position: relative;
   margin-bottom: 3rem;
