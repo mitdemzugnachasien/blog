@@ -242,22 +242,23 @@ document.addEventListener("DOMContentLoaded", () => {
         Automatische Slideshow
     */
 
-    function startTimer(){
+function startTimer(){
 
-        stopTimer();
-
-
-        timer = setInterval(() => {
-
-            if(!paused){
-
-                changeImage(1);
-
-            }
-
-        }, intervalTime);
-
+    if(timer !== null){
+        clearInterval(timer);
     }
+
+    timer = setInterval(() => {
+
+        if(!paused){
+
+            changeImage(1);
+
+        }
+
+    }, intervalTime);
+
+}
 
 
     /*
