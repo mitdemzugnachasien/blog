@@ -265,21 +265,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-
-    function stopTimer(){
-
-        if(timer){
-
-            clearInterval(timer);
-
-            timer = null;
-
-        }
-
-    }
-
-
-
     /*
         Klicknavigation
     */
@@ -307,26 +292,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-
-    /*
-        Maussteuerung
-    */
-
-    masthead.addEventListener("mouseenter",()=>{
-
-        paused = true;
-
-    });
-
-
-    masthead.addEventListener("mouseleave",()=>{
-
-        paused = false;
-
-    });
-
-
-
     /*
     Touchsteuerung Smartphone
     Linke Hälfte = vorheriges Bild
@@ -351,9 +316,6 @@ masthead.addEventListener("touchend", (e) => {
         changeImage(1);
 
     }
-
-    // Timer neu starten
-    startTimer();
 
 });
 
