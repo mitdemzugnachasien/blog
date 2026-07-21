@@ -38,13 +38,15 @@
 
                         <input
                             type="password"
-                            id="password"
-                            placeholder="Passwort"
+                            
                         >
 
-                        <button type="submit" onclick="checkPassword()">
-                            Anmelden
-                        </button>
+                      <form onsubmit="checkPassword(); return false;">
+                            <input type="password"
+                            id="password"
+                            placeholder="Passwort">
+                            <button type="submit">Anmelden</button>
+                    </form>
                     </div>
 
                 </div>
