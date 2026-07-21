@@ -42,7 +42,12 @@
     justify-content: center;
     align-items: center;
 }
-
+/* optional dunkler Overlay */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
 
 .container,
 .row,
