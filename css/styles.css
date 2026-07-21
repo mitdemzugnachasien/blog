@@ -10744,7 +10744,7 @@ footer {
   padding-bottom: 3rem;
 }
 
-header.loginmasthead {
+header.login {
   position: relative;
   width: 100%;
   min-height: 100vh; /* gesamte Bildschirmhöhe */
@@ -10761,7 +10761,7 @@ header.loginmasthead {
   background-attachment: scroll;
 }
 
-header.loginmasthead:before {
+header.login:before {
   content: "";
   position: absolute;
   inset: 0;
@@ -10770,11 +10770,13 @@ header.loginmasthead:before {
   opacity: 0.5;
 }
 /* Hintergrundebenen für Fade-Effekt */
-.masthead-bg {
+.-bg {
     position: absolute;
     inset: 0;
     background-size: cover;
     background-position: center;
+    background-color: #212529;
+    opacity: 0.5;
     transition: opacity 1.2s ease-in-out;
     z-index: 0;
 }
