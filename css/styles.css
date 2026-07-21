@@ -10775,10 +10775,18 @@ header.login:before {
     inset: 0;
     background-size: cover;
     background-position: center;
-    background-color: #212529;
-    opacity: 0.5;
     transition: opacity 1.2s ease-in-out;
     z-index: 0;
+}
+.-bg:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #212529;
+  opacity: 0.5;
 }
 
 
