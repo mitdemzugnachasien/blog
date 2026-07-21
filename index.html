@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
 
 
-    const intervalTime = 5000;
+    const intervalTime = 10000;
 
 
     const masthead = document.getElementById("masthead");
@@ -328,57 +328,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /*
-        Touchsteuerung Smartphone
-    */
+    Touchsteuerung Smartphone
+    Linke Hälfte = vorheriges Bild
+    Rechte Hälfte = nächstes Bild
+*/
 
-    let touchStartX = 0;
+masthead.addEventListener("touchend", (e) => {
 
+    // Position des Fingers relativ zum Slider
+    const rect = masthead.getBoundingClientRect();
+    const touchX = e.changedTouches[0].clientX - rect.left;
 
-    masthead.addEventListener(
-        "touchstart",
-        e => {
+    // Linke Hälfte
+    if (touchX < rect.width / 2) {
 
-            touchStartX = e.changedTouches[0].screenX;
+        changeImage(-1);
 
-        }
-    );
+    }
+    // Rechte Hälfte
+    else {
 
+        changeImage(1);
 
-    masthead.addEventListener(
-        "touchend",
-        e => {
+    }
 
+    // Timer neu starten
+    startTimer();
 
-            const touchEndX =
-                e.changedTouches[0].screenX;
-
-
-            const difference =
-                touchStartX - touchEndX;
-
-
-
-            if(Math.abs(difference) > 50){
-
-
-                if(difference > 0){
-
-                    changeImage(1);
-
-                } else {
-
-                    changeImage(-1);
-
-                }
-
-
-                startTimer();
-
-            }
-
-        }
-    );
-
+});
 
 
     /*
